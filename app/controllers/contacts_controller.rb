@@ -4,4 +4,8 @@ class ContactsController < ApplicationController
 		@contacts = Contact.all
 
 	end
+
+	def new 
+		@contact = Contact.new
+	end
 end

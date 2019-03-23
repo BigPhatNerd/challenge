@@ -1,13 +1,10 @@
 
 <%= @contacts.each do |contact| %>
-<div>
-	<h1><%= contact.name %></h1><br />
-	<i><%= contact.address %></i><br />
+<div class="booyah-box col-10 offset-1">
+	<h1><%= contact.name %></h1>
+	<i><%= contact.address %></i><br /><br />
 	<p><%= contact.description %></p><br />
 </div>
-
-
-<hr />
 <% end %>
 
 

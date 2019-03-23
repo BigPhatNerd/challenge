@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+<h1>Enter your information</h1>
+<%= simple_form_for @contact do |f| %>
+	<%= f.input :name %>
+	<%= f.input :address %>
+	<%= f.input :description %>
+	<div align-center><%= f.submit 'Create' %></div>
+<% end %>
+</div>
