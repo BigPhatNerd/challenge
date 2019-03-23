@@ -1,4 +1,13 @@
-<div class="quiz1">
-<h1> This is quiz #2!</h1>
+
+<%= @contacts.each do |contact| %>
+<div>
+	<h1><%= contact.name %></h1><br />
+	<i><%= contact.address %></i><br />
+	<p><%= contact.description %></p><br />
 </div>
+
+
+<hr />
+<% end %>
+
 
