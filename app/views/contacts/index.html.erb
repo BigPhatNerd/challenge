@@ -1,6 +1,19 @@
 
-<%= @contacts.each do |contact| %>
+<div class="title">
+<h1>Challenge Quiz #2</h1>
+</div>
+
+
+<div class="col-10 offset-1 text-center"> 
+<%= link_to 'Create New Contact', new_contact_path(@contact), class: 'btn btn-primary' %>
+</div>
+
+<% @contacts.each do |contact| %>
+
 <div class="booyah-box col-10 offset-1">
+	
+  
+
 	<h1><%= contact.name %></h1>
 	<i><%= contact.address %></i><br /><br />
 	<p><%= contact.description %></p><br />
